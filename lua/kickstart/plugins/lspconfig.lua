@@ -148,6 +148,10 @@ return {
         -- tsserver = {},
         --
 
+        solargraph = {
+          cmd = { os.getenv 'HOME' .. '/.rbenv/shims/solargraph', 'stdio' },
+        },
+
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
