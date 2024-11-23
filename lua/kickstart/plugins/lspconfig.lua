@@ -152,6 +152,30 @@ return {
           cmd = { os.getenv 'HOME' .. '/.rbenv/shims/solargraph', 'stdio' },
         },
 
+        tailwindcss = {
+          filetypes = {
+            "html",      -- Default filetype
+            "css",       -- Default filetype
+            "javascript",-- Default filetype
+            "typescript",-- Default filetype
+            "javascriptreact",
+            "typescriptreact",
+            "erb",       -- Add ERB filetype
+            "eruby",     -- Add ERuby filetype
+          },
+          settings = {
+            tailwindCSS = {
+              experimental = {
+                ["includeLanguages"] = { ["eruby"] = "erb" },
+                classRegex = {
+                  'class[:]\\s*"([^"]*)"',
+                },
+              },
+            },
+          },
+        },
+
+
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
