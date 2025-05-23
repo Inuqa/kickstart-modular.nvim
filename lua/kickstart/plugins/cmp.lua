@@ -23,7 +23,7 @@ return {
             'rafamadriz/friendly-snippets',
             config = function()
               require('luasnip.loaders.from_vscode').lazy_load()
-              require('luasnip').filetype_extend("javascript", { "javascriptreact" })
+              require('luasnip').filetype_extend('javascript', { 'javascriptreact' })
             end,
           },
         },
@@ -105,11 +105,10 @@ return {
           { name = 'nvim_lsp' },
           { name = 'luasnip' },
           { name = 'path' },
-          { name = 'buffer',
-            option = {
-              keyword_pattern = [[\k\+]],
-            }
-          },
+          { name = 'buffer', option = {
+            keyword_pattern = [[\k\+]],
+          } },
+          { name = 'supermaven' },
         },
       }
     end,
