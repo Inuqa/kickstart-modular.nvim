@@ -53,5 +53,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- customs
 
 vim.keymap.set('n', '<leader>t', vim.cmd.tabnew)
+vim.keymap.set('n', '<A-Left>', ':-tabmove<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<A-Right>', ':+tabmove<CR>', { noremap = true, silent = true })
 
 -- vim: ts=2 sts=2 sw=2 et
