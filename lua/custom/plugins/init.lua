@@ -4,5 +4,8 @@
 -- See the kickstart.nvim README for more information
 return {
   { "tpope/vim-rails" },
-  { "tpope/vim-fugitive" }
+  { "tpope/vim-fugitive" },
+  { "norcalli/nvim-colorizer.lua"},
+  { "mattn/emmet-vim"},
+  { "sindrets/diffview.nvim" }
 }
