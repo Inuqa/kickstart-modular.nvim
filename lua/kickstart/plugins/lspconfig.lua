@@ -147,9 +147,17 @@ return {
         -- But for many setups, the LSP (`tsserver`) will work just fine
         -- tsserver = {},
         --
+        -- eslint = {
+        --   cmd = { "env", "PATH=/home/seba/.nodenv/versions/22.3.0/bin:$PATH", "vscode-eslint-language-server", "--stdio" },
+        -- },
+
+        -- tsserver = {
+        --   cmd = { "env", "PATH=/home/seba/.nodenv/versions/22.3.0/bin:$PATH", "typescript-language-server", "--stdio" },
+        -- },
 
         solargraph = {
           cmd = { os.getenv 'HOME' .. '/.rbenv/shims/solargraph', 'stdio' },
+          -- cmd = { os.getenv 'HOME' .. '/.rbenv/versions/3.4.1/bin/solargraph', 'stdio' },
         },
 
         tailwindcss = {
