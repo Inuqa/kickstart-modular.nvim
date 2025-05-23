@@ -79,6 +79,6 @@ vim.opt.signcolumn = "yes"
 vim.opt.incsearch = true
 vim.opt.hlsearch = false
 
-vim.opt.wrap = false
+vim.opt.wrap = true
 vim.opt.smartindent = true
 -- vim: ts=2 sts=2 sw=2 et
